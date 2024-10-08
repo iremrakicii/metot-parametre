@@ -1,55 +1,23 @@
-# Bootcamp Görevleri - C# Kod Örnekleri
+# Proje Açıklaması
 
-Bu repo, patika.dev bootcamp görevleri için yazılmış olan çeşitli C# kod örneklerini içermektedir. Aşağıda, her bir örneğin işleyişi ve açıklamaları detaylı bir şekilde yer almaktadır.
+Bu projede dört farklı C# programı yer almaktadır. Her biri farklı metot yapılarının kullanımını göstermektedir.
 
-## 1. Rastgele Bir Sayının 2'ye Bölümünden Kalanını Döndüren Metot
+## 1. Şarkı Sözü Yazdırma
 
-### Görev:
-Rastgele bir sayı üretip, bu sayının 2'ye bölümünden kalanı geriye döndüren bir metot yazılması istenmiştir.
+- Burada, bir `void` metot kullanılarak ekrana bir şarkı sözü yazdırılıyor.
+- Bu işlem için sadece `Console.WriteLine("Seni kendime sakladım!")` ile ekrana yazı yazdırdık. Geriye herhangi bir değer döndürülmüyor.
 
-### Açıklama:
-- `Kalansayi` metodu, verilen iki sayı aralığında (`a` ve `b`) rastgele bir sayı üretir.
-- Üretilen sayının 2'ye bölümünden kalanı bulur ve bunu geri döndürür.
-- `Random` sınıfı kullanılarak rastgele sayı üretilmiştir.
-- `Main` metodunda bu kalan ekrana yazdırılmıştır.
+## 2. Rastgele Sayı Üretme ve Kalanını Bulma
 
----
+- Bu kısımda, `Random` sınıfı kullanılarak iki sayı aralığında rastgele bir sayı üretiliyor. Üretilen sayının 2'ye bölümünden kalan bulunarak ekrana yazdırılıyor.
+- Bunu yapmak için, `Random rastgele = new Random()` ile rastgele sayı ürettik ve `sayi % 2` işlemiyle kalanı bulduk.
 
-## 2. Hatalı Bir Metot Örneği
+## 3. İki Sayının Çarpımını Bulma
 
-### Görev:
-Yukarıdaki kodun hatalı bir versiyonu gösterilmiştir. Bu hata, birden fazla `return` ifadesi kullanılması ve sadece ilk `return` ifadesine ulaşılması nedeniyle, fonksiyonun beklenen şekilde çalışmamasına sebep olmaktadır.
+- Bu bölümde, parametre olarak iki sayı alıp, bu sayıların çarpımını geriye döndüren bir metot tanımlandı.
+- Bunu yapmak için `return a * b;` ifadesini kullanarak çarpım sonucunu döndürdük ve bu değeri ekrana yazdırdık.
 
-### Açıklama:
-- Metot, iki farklı `return` ifadesi içeriyor ancak ikinci `return` ifadesine hiçbir zaman ulaşılmayacak.
-- Bu yapı mantık hatası barındırmaktadır çünkü bir fonksiyondan tek bir `return` ifadesi çalıştırılabilir.
+## 4. Hoş Geldiniz Mesajı Yazdırma
 
----
-
-## 3. İki Sayının Çarpımını Geri Döndüren Metot
-
-### Görev:
-Parametre olarak aldığı iki sayının çarpımını geri döndüren bir metot yazılması istenmiştir.
-
-### Açıklama:
-- `CarpimSonucu` metodu iki adet tamsayı parametre alır (`a` ve `b`).
-- Bu iki sayının çarpımını hesaplayıp sonucu geri döndürür.
-- `Main` metodunda, bu metot çağrılır ve çarpım sonucu ekrana yazdırılır.
-
----
-
-## 4. İsim ve Soyisim Alıp Mesaj Gösteren Metot
-
-### Görev:
-Parametre olarak isim ve soyisim bilgilerini alıp ekrana `"Hoş Geldiniz {isim} {soyisim}"` şeklinde mesaj yazdıran bir metot yazılması istenmiştir.
-
-### Açıklama:
-- `İsimSoyisim` metodu, `string` türünde iki parametre alır: isim ve soyisim.
-- Bu bilgileri kullanarak, ekrana `"Hoş Geldiniz {isim} {soyisim}"` mesajını basar.
-- Geriye bir değer döndürmez (`void` metottur).
-- `Main` metodunda isim ve soyisim verilerek, karşılama mesajı gösterilir.
-  
----
-
-## Sonuç
-Bu örnekler, C# dilinde metotlarla çalışma, parametre alma ve değer döndürme konularını pekiştirmeye yönelik olarak yazılmıştır. Kodlar üzerinde incelemeler yaparak daha karmaşık projeler geliştirebilirsiniz.
+- Burada, bir metot parametre olarak isim ve soyisim alıyor. Sonrasında ekrana "Hoş Geldiniz {isim} {soyisim}" şeklinde bir mesaj yazdırılıyor.
+- Bu işlem için `Console.WriteLine($"Hoş Geldiniz {isim} {soyisim} ");` ifadesiyle isim ve soyisim bilgileri kullanılarak kişiselleştirilmiş bir mesaj oluşturduk.
