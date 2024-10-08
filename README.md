@@ -21,3 +21,7 @@ Bu projede dört farklı C# programı yer almaktadır. Her biri farklı metot ya
 
 - Burada, bir metot parametre olarak isim ve soyisim alıyor. Sonrasında ekrana "Hoş Geldiniz {isim} {soyisim}" şeklinde bir mesaj yazdırılıyor.
 - Bu işlem için `Console.WriteLine($"Hoş Geldiniz {isim} {soyisim} ");` ifadesiyle isim ve soyisim bilgileri kullanılarak kişiselleştirilmiş bir mesaj oluşturduk.
+
+## Kullandığım Araçlar ve Teknolojiler
+Programlama Dili: C#
+IDE: Visual Studio
