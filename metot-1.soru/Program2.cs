@@ -1,21 +1,15 @@
-﻿
-class Program2
+﻿class Program2
 {
-    // Geriye Tamsayı Döndüren Bir metot
-    // Rastgele bir sayı üretip bu sayının 2'ye bölümünden kalanı geriye döndürsün.
+    //Geriye Değer Döndürmeyen Bir void metot.
+    //Ekrana sevdiğiniz bir şarkı sözünü yazdırsın.
+
     static void Main()
     {
-
-        int kalan = Kalansayi(10, 50);
-        Console.WriteLine("Kalan:" + kalan);
-
+        SarkiSoyle();
     }
 
-    static int Kalansayi(int a, int b)
+    static void SarkiSoyle()
     {
-        Random rastgele = new Random();
-        int sayi = rastgele.Next(a, b);
-        return sayi % 2;
+        Console.WriteLine("Seni kendime sakladım!");
     }
-
 }

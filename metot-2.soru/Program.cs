@@ -5,16 +5,15 @@
     static void Main()
     {
 
-
         int kalan = Kalansayi(10, 50);
         Console.WriteLine("Kalan:" + kalan);
-
 
     }
 
     static int Kalansayi(int a, int b)
     {
-        return a % 2;
-        return b % 2;
+        Random rastgele = new Random();
+        int sayi = rastgele.Next(a, b);
+        return sayi % 2;
     }
 }
