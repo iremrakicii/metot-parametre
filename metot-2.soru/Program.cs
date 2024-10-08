@@ -5,12 +5,12 @@
     static void Main()
     {
 
-        int kalan = Kalansayi(10, 50);
+        int kalan = KalanSayi(10, 50);
         Console.WriteLine("Kalan:" + kalan);
 
     }
 
-    static int Kalansayi(int a, int b)
+    static int KalanSayi(int a, int b)
     {
         Random rastgele = new Random();
         int sayi = rastgele.Next(a, b);
